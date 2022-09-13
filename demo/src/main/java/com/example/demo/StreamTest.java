@@ -17,5 +17,7 @@ public class StreamTest {
 
         List<Integer> squareNum = list.stream().map(p->p*p).collect(Collectors.toList());
         System.out.println(squareNum);
+        
+        System.out.println("Count : "+list.stream().filter(p->p<=50).count());
     }
 }
